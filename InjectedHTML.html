@@ -1,0 +1,12 @@
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+  $(function(){
+    let searchBlock = $('#block-yui_3_17_2_1_1672327168047_58435')
+    .attr('id', '')
+    .addClass('header-search-bar');
+
+       /*Place Desktop Search Bar*/ 
+   $(searchBlock).insertAfter($('.header-title-nav-wrapper'));
+    $(searchBlock).clone().addClass('mobile-header-search-bar').appendTo($('.header-menu-nav-folder-content'));
+  })
+</script>
